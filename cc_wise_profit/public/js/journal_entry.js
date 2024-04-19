@@ -5,7 +5,6 @@ frappe.provide("erpnext.journal_entry");
 
     erpnext.accounts.JournalEntry = class JournalEntry extends frappe.ui.form.Controller {
         onload() {
-            frappe.msgprint("we are here")
             this.load_defaults();
             this.setup_queries();
             erpnext.accounts.dimensions.setup_dimension_filters(this.frm, this.frm.doctype);
